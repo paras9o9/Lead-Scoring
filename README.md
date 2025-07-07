@@ -43,3 +43,21 @@ The model was trained on real-world lead data and wrapped in an easy-to-use **St
 | XGBoost (Final)     | Best |  Highest  | High   | High     |
 
 The final model was selected for its balance of **accuracy**, **interpretability**, and **scalability**.
+
+--
+
+## How to run it locally
+
+# Clone the repo
+git clone https://github.com/your-username/lead-scoring-app.git
+cd lead-scoring-app
+
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app locally
+streamlit run app.py
