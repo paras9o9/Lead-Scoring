@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load model and expected features
-model = joblib.load("lead_scoring_model.pkl")
+model = joblib.load("lead-scoring-app/lead_scoring_model.pkl")
 model_features = joblib.load("model_features.pkl")
 
 st.title("🎯 Lead Scoring Prediction App")
