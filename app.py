@@ -34,3 +34,10 @@ if uploaded_file is not None:
 
     except KeyError:
         st.error("❌ Uploaded file is missing required columns. Please use the sample file.")
+
+st.write("✅ Model expects these features:")
+st.write(model_features)
+
+st.write("📤 Your uploaded file has these columns:")
+st.write(data.columns.tolist())
+
