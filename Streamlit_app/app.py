@@ -25,3 +25,11 @@ if uploaded_file is not None:
 
         csv = data.to_csv(index=False).encode('utf-8')
         st.download_button("📥 Download Predictions", csv, "lead_predictions.csv", "text/csv")
+
+with open("sample_leads.csv", "rb") as file:
+    st.download_button(
+        label="📥 Download Sample Leads CSV",
+        data=file,
+        file_name="sample_leads.csv",
+        mime="text/csv"
+    )
