@@ -24,13 +24,13 @@ The model was trained on real-world lead data and wrapped in an easy-to-use **St
 
 | Feature | Description |
 |---------|-------------|
-| 📊 Data Cleaning | Removed IDs, handled missing values, and encoded categorical features |
-| ⚙️ Model Training | Trained Logistic Regression, Random Forest, and XGBoost models |
-| 📈 Evaluation | Compared models using Accuracy, Precision, Recall, F1-Score |
-| 🧪 Feature Selection | Applied techniques to reduce noise and improve generalization |
-| 🧠 Model Export | Saved best model using `joblib` |
-| 💻 Streamlit App | Simple UI for CSV upload → Prediction → CSV download |
-| 📎 Deployment-Ready | Designed for local or cloud deployment (minor packaging step pending) |
+| Data Cleaning | Removed IDs, handled missing values, and encoded categorical features |
+| Model Training | Trained Logistic Regression, Random Forest, and XGBoost models |
+| Evaluation | Compared models using Accuracy, Precision, Recall, F1-Score |
+| Feature Selection | Applied techniques to reduce noise and improve generalization |
+| Model Export | Saved best model using `joblib` |
+| Streamlit App | Simple UI for CSV upload → Prediction → CSV download |
+| Deployment-Ready | Designed for local or cloud deployment (minor packaging step pending) |
 
 ---
 
