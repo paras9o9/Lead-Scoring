@@ -28,8 +28,15 @@ if uploaded_file is not None:
             st.error(f"❌ Your file is missing these required columns:\n{missing_cols}")
             st.stop()
 
-        # Reorder and filter columns
-        data_model = data[model_features]
+
+        # Fill missing columns with 0s
+for col in model_features:
+    if col not in data.columns:
+        data[col] = 0
+
+# Now reorder
+data_model = data[model_features]
+
 
         # Predict
         predictions = model.predict(data_model)
