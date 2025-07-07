@@ -11,6 +11,10 @@ uploaded_file = st.file_uploader("📤 Upload your leads CSV", type=["csv"])
 
 if uploaded_file is not None:
     try:
+
+        with open("sample_leads.csv", "rb") as f:
+        st.download_button("📄 Download Sample CSV", f, "sample_leads.csv", "text/csv")
+
         # Read uploaded data
         data = pd.read_csv(uploaded_file)
 
