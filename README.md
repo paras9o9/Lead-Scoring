@@ -1,6 +1,6 @@
 # 🧠 Lead Conversion Scoring Tool
 
-A machine learning-powered web tool to predict whether a marketing lead is likely to convert or not. This project demonstrates the end-to-end process of solving a real-world business problem — from data cleaning to model deployment — in under 5 hours.
+A machine learning-powered web tool to predict whether a marketing lead is likely to convert or not. This project demonstrates the end-to-end process of solving a real-world business problem — from data cleaning to model deployment.
 
 ---
 
