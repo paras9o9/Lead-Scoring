@@ -4,7 +4,7 @@ import joblib
 
 # Load model and expected features
 model = joblib.load("lead-scoring-app/lead_scoring_model.pkl")
-model_features = joblib.load("model_features.pkl")
+model_features = joblib.load("lead-scoring-app/model_features.pkl")
 
 st.title("🎯 Lead Scoring Prediction App")
 uploaded_file = st.file_uploader("📤 Upload your leads CSV", type=["csv"])
