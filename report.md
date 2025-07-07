@@ -1,11 +1,11 @@
-# 🧠 Lead Scoring Tool – AI Challenge Report
+# Lead Scoring Tool Report
 
-## ✅ Objective
+## Objective
 Build a machine learning-based lead scoring model that predicts whether a lead will convert (`Converted = 1`) and wrap it into a simple, user-friendly tool. The goal is to support marketing teams in prioritizing high-quality leads.
 
 ---
 
-## 🔍 Approach
+## Approach
 
 1. **Problem Framing**  
    - Binary Classification: Predict whether a lead will convert.
@@ -28,17 +28,17 @@ Build a machine learning-based lead scoring model that predicts whether a lead w
 
 ---
 
-## 📊 Results
+## Results
 
 | Model             | Accuracy | F1-Score |
 |------------------|----------|----------|
 | Logistic Regression | ~87%   | ~85%     |
 | Random Forest       | ~90%   | ~89%     |
-| **XGBoost** ✅      | ~92%   | ~91%     |
+| **XGBoost**         | ~92%   | ~91%     |
 
 ---
 
-## 🧪 Streamlit App
+## Streamlit App
 
 A clean UI allows users to:
 - Upload CSV files with leads
@@ -47,7 +47,7 @@ A clean UI allows users to:
 
 ---
 
-## 💡 Real-World Value
+## Real-World Value
 
 This tool supports:
 - Smarter sales prioritization
@@ -56,7 +56,7 @@ This tool supports:
 
 ---
 
-## ⚠️ Note on Deployment
+## Note on Deployment
 
 Due to environment mismatches, live deployment wasn’t completed. However, the full app runs locally and is deployment-ready with minor tweaks.
 
