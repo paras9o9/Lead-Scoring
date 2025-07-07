@@ -30,13 +30,11 @@ if uploaded_file is not None:
 
 
         # Fill missing columns with 0s
-for col in model_features:
-    if col not in data.columns:
-        data[col] = 0
+        for col in model_features:
+            if col not in data.columns:
+                 data[col] = 0
 
-# Now reorder
-data_model = data[model_features]
-
+        data_model = data[model_features]
 
         # Predict
         predictions = model.predict(data_model)
