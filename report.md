@@ -98,6 +98,6 @@ With minimal configuration, it can be publicly hosted and shared.
 
 **Paras Sharma**  
 This project was developed as part of the **Caprae Capital AI Readiness Pre-Screening Challenge**.  
-🔗 [LinkedIn Profile](https://linkedin.com/in/your-link) *(Add your link here)*
+🔗 [LinkedIn Profile]([https://linkedin.com/in/your-link](https://www.linkedin.com/in/paras-sharma-938b701a2/)) *(Add your link here)*
 
 ---
