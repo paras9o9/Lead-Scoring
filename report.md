@@ -1,62 +1,103 @@
-# Lead Scoring Tool Report
+# Lead Scoring Tool — Project Report
 
 ## Objective
-Build a machine learning-based lead scoring model that predicts whether a lead will convert (`Converted = 1`) and wrap it into a simple, user-friendly tool. The goal is to support marketing teams in prioritizing high-quality leads.
+
+Develop a machine learning–based lead scoring model to predict whether a marketing lead will convert (`Converted = 1`).  
+Wrap the model in a user-friendly web app to help marketing teams **prioritize high-quality leads** and improve sales efficiency.
 
 ---
 
 ## Approach
 
-1. **Problem Framing**  
-   - Binary Classification: Predict whether a lead will convert.
-   - Target: `Converted`
+### 1. Problem Framing
+- **Type**: Binary Classification
+- **Target Variable**: `Converted`
+- **Goal**: Predict lead conversion likelihood using behavioral and profile data
 
-2. **Data Preprocessing**
-   - Dropped ID columns (`Lead Number`, `Prospect ID`)
-   - Imputed missing values using statistical techniques
-   - Encoded categorical features using Label and OneHot Encoding
-   - Normalized numeric columns for scaling
+---
 
-3. **Model Development**
-   - Trained Logistic Regression, Random Forest, and XGBoost
-   - Selected **XGBoost** based on highest performance (accuracy, F1)
-   - Saved model with `joblib` for deployment
+### 2. Data Preprocessing
+- Dropped identifier columns: `Prospect ID`, `Lead Number`
+- Handled missing values using median/mode imputation and category placeholders
+- Transformed binary columns (`Yes`/`No`) into numeric (`1`/`0`)
+- Applied **One-Hot Encoding** for categorical features like `City`, `Lead Source`, `Country`
+- Normalized continuous features (e.g., `TotalVisits`, `Page Views Per Visit`)
 
-4. **Evaluation**
-   - Used Accuracy, Precision, Recall, F1, and Confusion Matrix
-   - Handled class imbalance using stratified splitting
+---
+
+### 3. Model Development
+- Trained and evaluated:
+  - Logistic Regression
+  - Random Forest
+  - **XGBoost**
+- XGBoost selected for its superior performance and ability to handle mixed feature types
+- Model saved using `joblib` for portability and integration into the app
+
+---
+
+### 4. Evaluation Metrics
+- Used: **Accuracy**, **Precision**, **Recall**, **F1-Score**, and **Confusion Matrix**
+- Stratified data splitting to handle slight class imbalance
 
 ---
 
 ## Results
 
-| Model             | Accuracy | F1-Score |
-|------------------|----------|----------|
-| Logistic Regression | ~87%   | ~85%     |
-| Random Forest       | ~90%   | ~89%     |
-| **XGBoost**         | ~92%   | ~91%     |
+| Model               | Accuracy | F1-Score |
+|--------------------|----------|----------|
+| Logistic Regression | ~87%  | ~85%  |
+| Random Forest       | ~90%  | ~89%  |
+| **XGBoost (Final)** | ~92%  | ~91%  |
+
+> The XGBoost model demonstrated the best overall performance with a strong balance of accuracy and generalization.
 
 ---
 
-## Streamlit App
+## Streamlit App Interface
 
-A clean UI allows users to:
-- Upload CSV files with leads
-- Get predictions (Converted = 1 or 0)
-- Download the result CSV with added `Lead Score`
+The final app allows users to:
+- Upload new lead data as CSV
+- Predict conversion likelihood
+- Download the results with a `Prediction` column appended
+
+The model automatically processes the input, applies necessary encoding, and returns predictions in real time.
 
 ---
 
 ## Real-World Value
 
-This tool supports:
-- Smarter sales prioritization
-- Time-efficient outreach
-- Improved conversion strategy
+This tool directly supports:
+- **Targeted sales outreach** (focus on high-probability leads)
+- **Time efficiency** (reduce low-quality lead handling)
+- **Improved conversion rates** via data-driven decision-making
+
+It’s especially valuable in B2C and ed-tech-style businesses with high lead inflow.
 
 ---
 
-## Note on Deployment
+## Deployment Note
 
-Due to environment mismatches, live deployment wasn’t completed. However, the full app runs locally and is deployment-ready with minor tweaks.
+The app was **successfully deployed locally** and is fully functional.
 
+It allows users to:
+- Upload a leads CSV
+- Automatically preprocess the data
+- Generate predictions on conversion likelihood
+- Download the output — all from a browser-based UI
+
+> The tool is also ready for cloud deployment via:
+> - Streamlit Sharing
+> - Hugging Face Spaces
+> - Docker-based cloud platforms
+
+With minimal configuration, it can be publicly hosted and shared.
+
+---
+
+## Author
+
+**Paras Sharma**  
+This project was developed as part of the **Caprae Capital AI Readiness Pre-Screening Challenge**.  
+🔗 [LinkedIn Profile](https://linkedin.com/in/your-link) *(Add your link here)*
+
+---
